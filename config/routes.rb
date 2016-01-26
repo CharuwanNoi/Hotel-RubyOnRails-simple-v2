@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get 'employees/index'
 
   resources :welcome
-  resources :rooms 
+  resources :rooms do
+    resources :employees
+  end 
 
   resources :reservation
 

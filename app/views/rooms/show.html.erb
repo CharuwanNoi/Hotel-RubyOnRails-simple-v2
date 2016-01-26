@@ -1,3 +1,9 @@
 <h1>Rooms#show</h1>
 
+<p>
+  <strong>Room:</strong>
+  <%= @room.room %>
+</p>
+
+<%= link_to 'Add employee', room_employees_path(@room) %>
 <%= link_to 'Back', rooms_path %>
